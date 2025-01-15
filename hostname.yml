@@ -1,0 +1,12 @@
+---
+- name: Vérifier le hostname réel du serveur
+  hosts: all
+  gather_facts: no  # Désactive la collecte automatique des facts
+  tasks:
+    - name: Exécuter la commande hostname
+      command: hostname
+      register: hostname_output
+
+    - name: Afficher le hostname réel
+      debug:
+        msg: "Le hostname réel est {{ hostname_output.stdout }}"
