@@ -2,6 +2,7 @@
 
 ## System requirement
 Ubuntu 20.04 or later
+
 4 vCPU - 8 GB RAM - 60 GB Disk
 
 ## Kuerbnetes
