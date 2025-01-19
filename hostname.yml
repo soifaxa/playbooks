@@ -4,7 +4,7 @@
   gather_facts: no  # Désactive la collecte automatique des facts
   tasks:
     - name: Exécuter la commande hostname
-      command: /usr/bin/hostname
+      command: tail -1 /etc/hosts
       register: hostname_output
 
     - name: Afficher le hostname réel
